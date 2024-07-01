@@ -23,3 +23,6 @@ for _, file in ipairs(plugin_files) do
 end
 require('lazy').setup(plugins)
 require('leprekus.remap')
+
+vim.o.relativenumber = true
+vim.o.number = true
