@@ -16,7 +16,7 @@ return {
 
         -- Setup mason-lspconfig with automatic installation of servers
         mason_lspconfig.setup({
-            ensure_installed = { "lua_ls", "pyright", "tsserver", "clangd", "rust_analyzer" },  -- Add the servers you need
+            ensure_installed = { "lua_ls", "pyright", "clangd", "rust_analyzer" },  -- Add the servers you need
             automatic_installation = true,  -- Automatically install if not already installed
         })
 
@@ -28,7 +28,6 @@ return {
         -- Example configuration for Lua, Python, TypeScript, C, and Rust LSP servers
         lspconfig.lua_ls.setup {}        -- Configure Lua LSP
         lspconfig.pyright.setup {}       -- Configure Python LSP
-        lspconfig.tsserver.setup {}      -- Configure TypeScript LSP
         lspconfig.clangd.setup {}        -- Configure C/C++ LSP
         lspconfig.rust_analyzer.setup {} -- Configure Rust LSP
     end
