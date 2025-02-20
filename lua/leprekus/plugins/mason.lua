@@ -30,6 +30,8 @@ return {
         lspconfig.pyright.setup {}       -- Configure Python LSP
         lspconfig.clangd.setup {}        -- Configure C/C++ LSP
         lspconfig.rust_analyzer.setup {} -- Configure Rust LSP
+	lspconfig.ts_ls.setup {}
+
     end
 }
 
